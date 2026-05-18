@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// imported nrtflix index file and also bootstrap libraries/files.
+import { NetflixIndex } from './netflix/netflix-index';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import {Login} from './components/login/login';
+import {DataBinding} from './components/data-binding/data-binding-primitive'
+import { DataBindingObject } from './components/data-binding/data-binding-object';
+import {DataBindingInHtmlByReact} from './components/data-binding/data-binding-in-html-by-react'
+import {DataBindingComplex} from './components/data-binding/data-binding-three-complex'
+import {DataBindingNested} from './components/data-binding/data-binding-five-complex-nested'
+import { NasaComponent } from './nasa-api/nasa-component-one';
+import { CardComponent} from './cards-codes/card-code-one'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <CardComponent /> 
   </React.StrictMode>
 );
 

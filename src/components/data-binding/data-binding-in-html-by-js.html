@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var categories = ["Electronics","Footwear","Fashion"];
+        function bodyload(){
+            for(var item of categories)
+            {
+                var li = document.createElement("li");
+                li.innerHTML = item;
+                document.querySelector("ol").appendChild(li);
+
+                // to add this above categories in a  dropdown we have tos add it in
+                // a option
+
+                var option = document.createElement("option");
+                option.text = item;
+                option.value = item;
+                document.querySelector("select").appendChild(option);
+            }
+        }
+    </script>
+</head>
+<body onload = "bodyload()">
+
+    <!-- // If we do this thing with js we need to do so many things 
+    // like we have to write an onload event then we have to read every element from array
+    // then we have to use an iterator then we have to create am list item
+    // to read every item from a categories for that we create a list item in that innerHTML item
+    // means categoryName then we have to add this item list to ordered list means ol 
+    // by using querrySelector(ol) in that appendChild(li).  this above is the standard way to
+    define add the values in dropdown through js so we have to see the same code through react-->
+    <ol></ol>
+    <select></select>
+</body>
+</html>

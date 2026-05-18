@@ -1,0 +1,63 @@
+.card{
+    width : 195px;
+}
+
+.card:nth-child(odd){
+    background-color: aquamarine;
+}
+.card:nth-child(even){
+    background-color: cyan;
+}
+
+
+/* chatgpt */
+
+.card:nth-child(odd){
+    background-color: #e3f2fd;
+}
+
+.card:nth-child(even){
+    background-color: #f3e5f5;
+}
+
+/* chatgpt */
+
+.card:nth-child(odd){
+    background-color: #f8f9fa;
+}
+
+.card:nth-child(even){
+    background-color: #dbeafe;
+}
+
+/* chatgpt */
+
+.card:nth-child(odd){
+    background-color: #dbeafe;
+}
+
+.card:nth-child(even){
+    background-color: #ede9fe;
+}
+
+/* chatgpt */
+
+.card:nth-child(odd){
+    background: linear-gradient(135deg, #cfe8ff, #e8d5ff);
+}
+
+.card:nth-child(even){
+    background: linear-gradient(135deg, #dff7ff, #d6e4ff);
+}
+
+/* chatgpt */
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}

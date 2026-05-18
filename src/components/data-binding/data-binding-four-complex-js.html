@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+// same example is done byu react but we want to see the pain of doing
+// it in js -->
+
+    <script>
+        var data = [
+        {Name: "Samsung Tv", Price: 76544.00, Stock: true},
+        {Name: "Nike Casuals", Price: 5263.00, Stock: true}
+    ];
+    function bodyload(){
+
+        // here through for loop we are reading every data and every item is an object type 
+        // and each one conatains name,stock,price
+        for (var item of data){
+            // create a row to add every item in a row
+            var tr = document.createElement("tr");
+            var tdName = document.createElement("td");
+            var tdPrice = document.createElement("td");
+            var tdStock = document.createElement("td");
+
+          //  in first cell of table there will be tdName then second cell price and ...
+            tdName.innerHTML = item.Name;
+            tdPrice.innerHTML = item.Price;
+            tdStock.innerHTML = item.Stock;
+
+        // now we have to add this cells into row
+            tr.appendChild(tdName);
+            tr.appendChild(tdPrice);
+            tr.appendChild(tdStock);
+        // after adding this cells to row this row must be added into table body
+        document.querySelector("tbody").appendChild(tr);
+        }
+    }
+</script>
+</head>
+
+
+<body onload = "bodyload()">
+    <table border="1" width="20">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+
+

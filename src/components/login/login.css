@@ -1,0 +1,15 @@
+/* .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+form{
+    padding:20px;
+    border: 2px solid grey
+} */
+
+/* this css is not used by login until we import it in login.js */
+
+/* this styles are also applying on the others file technically it should not apply  if we didnt import it 
+currently its applying on data-binding.js file see why */
