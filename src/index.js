@@ -19,11 +19,12 @@ import { FakeStoreComponent } from './components/fakestore-api/fakestore.compone
 import { FakeStoreComponentTwo } from './components/fakestore-api/fakestore.component.two';
 // this below will import bootstrap js which will help to create bootstrap popup we have done it on clicking on cart button.
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+import { FakeStoreComponentThree } from './components/fakestore-api/fakestore.component.three.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FakeStoreComponentTwo /> 
+    <FakeStoreComponentThree /> 
   </React.StrictMode>
 );
 
