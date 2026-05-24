@@ -15,11 +15,15 @@ import {DataBindingComplex} from './components/data-binding/data-binding-three-c
 import {DataBindingNested} from './components/data-binding/data-binding-five-complex-nested'
 import { NasaComponent } from './nasa-api/nasa-component-one';
 import { CardComponent} from './cards-codes/card-code-one'
+import { FakeStoreComponent } from './components/fakestore-api/fakestore.component.one'
+import { FakeStoreComponentTwo } from './components/fakestore-api/fakestore.component.two';
+// this below will import bootstrap js which will help to create bootstrap popup we have done it on clicking on cart button.
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CardComponent /> 
+    <FakeStoreComponentTwo /> 
   </React.StrictMode>
 );
 
