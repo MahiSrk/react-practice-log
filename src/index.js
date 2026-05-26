@@ -21,11 +21,13 @@ import { FakeStoreComponentTwo } from './components/fakestore-api/fakestore.comp
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
 import { FakeStoreComponentThree } from './components/fakestore-api/fakestore.component.three.js';
 import { FakeStoreComponentFour } from './components/fakestore-api/fakestore.compoent.four.js';
+import { FakeStoreComponentFive } from './components/fakestore-api/fakestore.componen.five.styles.js';
+import { StyleBinding } from './components/fakestore-api/style.binding.six.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FakeStoreComponentFour /> 
+    <StyleBinding /> 
   </React.StrictMode>
 );
 
