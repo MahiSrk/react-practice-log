@@ -27,11 +27,12 @@ import { DataBindingOne } from './components/fakestore-api/data-binding.seven.js
 import {DataBindingTwoWay} from './components/fakestore-api/data-binding-eight.js';
 import { DataBindingCmplx } from './components/fakestore-api/data-binding-ten.js';
 import { StyleBindingTwo } from './components/fakestore-api/style-binding-eleven.js';
+import { ClassBindingComponent } from './components/fakestore-api/classs-binding-component-twelve.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StyleBindingTwo /> 
+    <ClassBindingComponent />
   </React.StrictMode>
 );
 
