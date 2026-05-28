@@ -24,11 +24,13 @@ import { FakeStoreComponentFour } from './components/fakestore-api/fakestore.com
 import { FakeStoreComponentFive } from './components/fakestore-api/fakestore.componen.five.styles.js';
 import { StyleBinding } from './components/fakestore-api/style.binding.six.js';
 import { DataBindingOne } from './components/fakestore-api/data-binding.seven.js';
+import {DataBindingTwoWay} from './components/fakestore-api/data-binding-eight.js';
+import { DataBindingCmplx } from './components/fakestore-api/data-binding-ten.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DataBindingOne /> 
+    <DataBindingCmplx /> 
   </React.StrictMode>
 );
 
