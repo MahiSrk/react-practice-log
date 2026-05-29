@@ -1,0 +1,23 @@
+ <!-- Event Binding here we can see what info "event" is carring and what info "this" is carrying, so this is carrying object related details and event is carring current event details -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function InsertClick(e,obj){
+            document.write(`
+                Button Id : ${obj.id} <br>
+                Button Name : ${obj.name} <br>
+                Button Valur: ${obj.value} <br>
+                X Position : ${e.clientX}  <br>
+                ctrl key : ${e.ctrlKey}
+            `);
+        }
+    </script>
+</head>
+<body>
+    <button id="btnInsert" value="Insert" name="InsertButton" onclick="InsertClick(event,this)">Insert</button>
+</body>
+</html>
