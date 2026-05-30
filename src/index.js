@@ -29,11 +29,12 @@ import { DataBindingCmplx } from './components/fakestore-api/data-binding-ten.js
 import { StyleBindingTwo } from './components/fakestore-api/style-binding-eleven.js';
 import { ClassBindingComponent } from './components/fakestore-api/classs-binding-component-twelve.js';
 import { ClassDemoComponent } from './components/data-binding/class-binding-thirteen.js';
+import { EventBinding } from './components/event-binding/event-binding-fifteen.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClassDemoComponent  />
+    <EventBinding  />
   </React.StrictMode>
 );
 
